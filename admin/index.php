@@ -56,31 +56,7 @@
                   ></a>
                 </div>
               </div>
-
-              <div class="col-lg-3 col-6">
-                <!-- small box -->
-                <div class="small-box bg-warning">
-                  <div class="inner">
-                    <h3>
-                      <?php
-                        $query = "SELECT * FROM exam";
-                        $result = mysqli_query($con, $query);
-                        $row = mysqli_num_rows($result);
-                        echo $row;
-                      ?>
-                    </h3>
-
-                    <p>Ibizamini</p>
-                  </div>
-                  <div class="icon">
-                    <i class="ion ion-person-add"></i>
-                  </div>
-                  <a href="#" class="small-box-footer"
-                   id='viewExam'
-                    >Amakuru arambuye <i class="fas fa-arrow-circle-right"></i
-                  ></a>
-                </div>
-              </div>
+ 
             </div>
             <!-- /.row -->
           </div>
