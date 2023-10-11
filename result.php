@@ -1,6 +1,7 @@
 <?php
 	include 'admin/config.php';
 	// Attempt select query execution
+	
 	$sql = "SELECT * FROM question";
 	$result = mysqli_query($con, $sql);
 	$d  = mysqli_num_rows($result) > 0;

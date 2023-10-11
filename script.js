@@ -57,7 +57,9 @@ const d_text = document.getElementById("d_text");
 const nextBtn = document.getElementById("submit");
 const prevBtn = document.getElementById("prev");
 const finishBtn = document.getElementById("finish");
+
 const COUNTER_KEY = "my-counter";
+
 function timer(today) {
   const second = 1000,
     minute = second * 60,

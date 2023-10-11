@@ -12,10 +12,10 @@
 		$choice3 = uploadImage($_FILES["choice3"]);
 		$choice4 = uploadImage($_FILES["choice4"]);
 	} else {
-		$choice1 = htmlentities($_POST['choice1']);
-		$choice2 = htmlentities($_POST['choice2']);
-		$choice3 = htmlentities($_POST['choice3']);
-		$choice4 = htmlentities($_POST['choice4']);
+		$choice1 = $_POST['choice1'];
+		$choice2 = $_POST['choice2'];
+		$choice3 = $_POST['choice3'];
+		$choice4 = $_POST['choice4'];
 	}
 
 	$correctChoice = $_POST['correct-choice'];
