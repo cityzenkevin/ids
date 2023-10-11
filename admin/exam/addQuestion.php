@@ -12,14 +12,14 @@
 		$choice3 = uploadImage($_FILES["choice3"]);
 		$choice4 = uploadImage($_FILES["choice4"]);
 	} else {
-		$choice1 = $_POST['choice1'];
-		$choice2 = $_POST['choice2'];
-		$choice3 = $_POST['choice3'];
-		$choice4 = $_POST['choice4'];
+		$choice1 =htmlspecialchars($_POST['choice1']);
+		$choice2 =htmlspecialchars($_POST['choice2']);
+		$choice3 = htmlspecialchars($_POST['choice3']);
+		$choice4 = htmlspecialchars($_POST['choice4']);
 	}
 
 	$correctChoice = $_POST['correct-choice'];
-	$question = htmlentities($_POST['question-text']);
+	$question = htmlspecialchars($_POST['question-text']);
 
 	$sql = "INSERT INTO
 	`question` (`id`, `questionText`, `choice1`, `choice2`, `choice3`, `choice4`, `correctChoice`, `questionPhoto`)
